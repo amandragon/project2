@@ -1,0 +1,22 @@
+  <div class="row">
+    <div class="col-xs-1 text-center">
+    </div>
+    <div class="col-xs-10 text-center">
+      <div id="donut-example"></div>
+    </div>
+    <div class="col-xs-1 text-center">
+    </div>
+  </div>
+
+<script>
+
+Morris.Donut({
+  element: 'donut-example',
+  data: [
+    {label: "Download Sales", value: 12},
+    {label: "In-Store Sales", value: 30},
+    {label: "Mail-Order Sales", value: 20}
+  ]
+});
+
+</script>

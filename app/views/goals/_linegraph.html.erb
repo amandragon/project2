@@ -1,0 +1,29 @@
+    <div class="row">
+    <div class="col-xs-1 text-center">
+    </div>
+    <div class="col-xs-10 text-center">
+      <div id="area-example"  style="height: 500px; width: 100%;"></div>
+    </div>
+    <div class="col-xs-1 text-center">
+    </div>
+  </div>
+
+  <script>
+
+  Morris.Area({
+    element: 'area-example',
+    data: [
+      { y: '2006', a: 0, b: 0 },
+      { y: '2007', a: 10,  b: 65 },
+      { y: '2008', a: 20,  b: 40 },
+      { y: '2009', a: 30,  b: 65 },
+      { y: '2010', a: 40,  b: 40 },
+      { y: '2011', a: 50,  b: 65 },
+      { y: '2012', a: 1000, b: 90 }
+    ],
+    xkey: 'y',
+    ykeys: ['a', 'b'],
+    labels: ['Series A', 'Series B']
+  });
+
+  </script>
