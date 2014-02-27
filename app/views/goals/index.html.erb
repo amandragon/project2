@@ -70,7 +70,7 @@
     </div>
 
     <div class="col-xs-3">
-      <%= link_to "View Stats", "/goals/new", class: "btn grow btn-primary" %>
+      <%= link_to "Create", "/goals/new", class: "btn grow btn-primary" %>
     </div>
 
     <div class="col-xs-2">
@@ -98,8 +98,7 @@
     </div>
 
     <div class="col-xs-8">
-      <h1>All Goals</h1>
-      <hr>
+      <h1 class="headline text-center">All Amazing Goals</h1>
     </div>
 
     <div class="col-xs-2">
@@ -107,12 +106,13 @@
 
   </div>
 
-
+    
 
 <% @goals.each do |goal| %>
   <div class="row">
     <div class="col-xs-2">
     </div>
+<<<<<<< HEAD
 
     <div class="col-xs-5">
       <h3><a href="<%=goal_path(goal.id)%>"><%= goal.name%></a></h3>
@@ -124,16 +124,17 @@
     </div>
 
     <div class="col-xs-2">
+=======
+  <div class="col-xs-8 text-center">
+    <div class="thumbnail ">
+      <div class="caption">
+        <h1 class="goalheadline"><%= goal.name%></h1>
+        <h2><%= goal.distance%> Miles</h2>
+        <p><a href="<%=goal_path(goal.id)%>", class="btn btn-primary btn-lg btn-block" >Check out this goal</a></p>
+      </div>
+>>>>>>> 041caaf9370bdfa2e99fde4431f316ef85950f20
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-xs-2">
-    </div>
-
-    <div class="col-xs-8">
-      <hr>
-    </div>
 
     <div class="col-xs-2">
     </div>
@@ -144,14 +145,9 @@
 
 
 
-
+</div>
 </div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<%= render 'layouts/footerstatic' %>
 
+<%= render 'layouts/footerstatic' %>
 
